@@ -15,7 +15,7 @@ char M;
 void leaderboard_for_ttt();
 void leaderboard_for_password();
 void leadebroard_for_1v1();
-char next;
+char next_char;
 //tictactoe
 void instruc_for_ttt();
 string player1_name_ttt, player2_name_ttt;
@@ -19404,9 +19404,9 @@ void leadebroard_for_1v1(){
 	
 	cout << endl;
 	cout << "\t\t\t\t\t\t\t\tPress N for Next: ";
-	cin >> next;
+	cin >> next_char;
 	
-	switch(next){
+	switch(next_char){
 		case 'N':
 			leaderboard_for_password();
 			break;
@@ -19436,9 +19436,9 @@ void leaderboard_for_password(){
 	
 	cout << endl;
 	cout << "\t\t\t\t\t\t\t\tPress N for Next and P for Prev: ";
-	cin >> next;
+	cin >> next_char;
 	
-	switch(next){
+	switch(next_char){
 		case 'N':
 			leaderboard_for_ttt();
 			break;
@@ -19471,9 +19471,9 @@ void leaderboard_for_ttt(){
 	
 	cout << endl;
 	cout << "\t\t\t\t\t\t\t\tPress P for Prev: ";
-	cin >> next;
+	cin >> next_char;
 	
-	switch(next){
+	switch(next_char){
 		case 'P':
 			leaderboard_for_password();
 			break;
@@ -19481,4 +19481,3 @@ void leaderboard_for_ttt(){
 			main();
 	}
 }
-
